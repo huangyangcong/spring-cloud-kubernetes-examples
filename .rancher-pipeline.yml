@@ -2,11 +2,12 @@ stages:
 - name: compile
   steps:
   - runScriptConfig:
-      image: java:8
-      shellScript: mvn clean package
+      image: maven
+      shellScript: mvn clean package fabric8:push  -Dcheckstyle.skip=true -Pkubernetes
+        spring -f ./spring-cloud-kubernetes-examples/kubernetes-hello-world-example/pom.xml
 - name: deploy
   steps:
   - applyYamlConfig:
-      path: ./deployment.yaml
+      path: ./kubernetes-hello-world-example/target/classes/META-INF/fabric8/kubernetes.yml
 timeout: 60
 notification: {}
