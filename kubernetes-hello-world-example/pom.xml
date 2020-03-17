@@ -158,6 +158,7 @@
 								<username>1352640897@qq.com</username>
 								<password>hyc123456</password>
 							</authConfig>
+							<dockerHost>unix:///var/run/docker.sock</dockerHost>
 							<enricher>
 								<config>
 									<fmp-service>
