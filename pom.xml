@@ -93,7 +93,7 @@
     </dependencyManagement>
     <repositories>
         <repository>
-            <id>alimaven</id>
+`            <id>central</id>
             <name>aliyun maven</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
             <releases>
