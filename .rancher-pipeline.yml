@@ -3,8 +3,8 @@ stages:
   steps:
   - runScriptConfig:
       image: maven
-      shellScript: mvn clean package fabric8:push  -Dcheckstyle.skip=true -Pkubernetes
-        spring -f kubernetes-hello-world-example/pom.xml
+      shellScript: mvn clean package fabric8:push  -Dcheckstyle.skip=true -Pkubernetes,spring
+        -f kubernetes-hello-world-example/pom.xml
 - name: deploy
   steps:
   - applyYamlConfig:
