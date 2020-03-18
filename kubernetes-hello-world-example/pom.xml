@@ -153,6 +153,7 @@
 									</spring-boot>
 								</config>
 							</generator>
+							<isJib>true</isJib>
 							<pushRegistry>registry.cn-hangzhou.aliyuncs.com</pushRegistry>
 							<authConfig>
 								<username>1352640897@qq.com</username>
