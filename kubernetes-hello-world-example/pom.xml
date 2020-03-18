@@ -149,7 +149,7 @@
 								<config>
 									<spring-boot>
 										<color>always</color>
-										<name>ychuang/${project.artifactId}:${project.version}</name>
+										<name>ychuang/${project.artifactId}:${project.version}-${maven.build.timestamp}</name>
 									</spring-boot>
 								</config>
 							</generator>
