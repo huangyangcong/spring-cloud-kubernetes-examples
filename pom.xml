@@ -50,6 +50,7 @@
         </maven-checkstyle-plugin.failsOnViolation>
         <maven-checkstyle-plugin.includeTestSourceDirectory>true
         </maven-checkstyle-plugin.includeTestSourceDirectory>
+        <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
     </properties>
     <modules>
         <module>kubernetes-reload-example</module>
