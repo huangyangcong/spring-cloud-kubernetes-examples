@@ -153,13 +153,13 @@
 									</spring-boot>
 								</config>
 							</generator>
+							<buildStrategy>s2i</buildStrategy>
 							<isJib>true</isJib>
 							<pushRegistry>registry.cn-hangzhou.aliyuncs.com</pushRegistry>
 							<authConfig>
 								<username>1352640897@qq.com</username>
 								<password>hyc123456</password>
 							</authConfig>
-							<dockerHost>unix:///var/run/docker.sock</dockerHost>
 							<enricher>
 								<config>
 									<fmp-service>
