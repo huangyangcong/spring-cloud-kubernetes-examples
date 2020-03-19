@@ -162,6 +162,7 @@
 								<username>1352640897@qq.com</username>
 								<password>hyc123456</password>
 							</authConfig>
+							<pullRegistry>registry.cn-hangzhou.aliyuncs.com</pullRegistry>
 							<enricher>
 								<excludes>
 									<exclude>f8-expose</exclude>
