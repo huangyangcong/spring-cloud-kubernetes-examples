@@ -2,7 +2,7 @@ stages:
 - name: compile
   steps:
   - runScriptConfig:
-      image: fabric8/maven-builder
+      image: maven
       shellScript: mvn clean package fabric8:push  -Dcheckstyle.skip=true -Pkubernetes
         -f kubernetes-hello-world-example/pom.xml
 - name: deploy
