@@ -158,6 +158,10 @@
 							</generator>
 							<dockerHost>http://122.51.133.124:2375</dockerHost>
 							<pushRegistry>registry.cn-hangzhou.aliyuncs.com</pushRegistry>
+							<authConfig>
+								<username>1352640897@qq.com</username>
+								<password>hyc123456</password>
+							</authConfig>
 							<enricher>
 								<excludes>
 									<exclude>f8-expose</exclude>

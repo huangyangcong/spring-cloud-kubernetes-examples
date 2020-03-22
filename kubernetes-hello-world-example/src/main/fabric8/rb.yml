@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: kubernetes-example
+subjects:
+  - kind: ServiceAccount
+    name: kubernetes-example
+roleRef:
+  kind: Role
+  name: kubernetes-example
+  apiGroup: rbac.authorization.k8s.io
