@@ -12,7 +12,7 @@ stages:
       targetKey: DOCKER_USERNAME
     - sourceName: docker-sercrt
       sourceKey: DOCKER_PASSWORD
-      targetKey: DOCKER_USERNAME
+      targetKey: DOCKER_PASSWORD
 - name: deploy
   steps:
   - applyYamlConfig:
