@@ -3,8 +3,12 @@ stages:
   steps:
   - runScriptConfig:
       image: maven
-      shellScript: mvn clean package fabric8:build fabric8:push -Dcheckstyle.skip=true -Pkubernetes
-        -f kubernetes-hello-world-example/pom.xml
+      shellScript: mvn clean package fabric8:build fabric8:push  -Ddocker.username=${docker.username}
+        -Ddocker.password=${docker.password} -Dcheckstyle.skip=true -Pkubernetes -f
+        kubernetes-hello-world-example/pom.xml
+    env:
+      docker.password: hyc123456
+      docker.username: 1352640897@qq.com
 - name: deploy
   steps:
   - applyYamlConfig:
