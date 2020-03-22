@@ -6,9 +6,13 @@ stages:
       shellScript: mvn clean package fabric8:build fabric8:push  -Ddocker.username=${DOCKER_USERNAME}
         -Ddocker.password=${DOCKER_PASSWORD} -Dcheckstyle.skip=true -Pkubernetes -f
         kubernetes-hello-world-example/pom.xml
-    env:
-      DOCKER_PASSWORD: hyc123456
-      DOCKER_USERNAME: 1352640897@qq.com
+    envFrom:
+    - sourceName: docker-sercrt
+      sourceKey: DOCKER_USERNAME
+      targetKey: DOCKER_USERNAME
+    - sourceName: docker-sercrt
+      sourceKey: DOCKER_PASSWORD
+      targetKey: DOCKER_USERNAME
 - name: deploy
   steps:
   - applyYamlConfig:
