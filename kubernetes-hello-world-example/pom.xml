@@ -143,7 +143,6 @@
 									</spring-boot>
 								</config>
 							</generator>
-							<isJib>true</isJib>
 							<dockerHost>http://122.51.133.124:2375</dockerHost>
 							<pushRegistry>registry.cn-hangzhou.aliyuncs.com</pushRegistry>
 							<enricher>
