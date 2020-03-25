@@ -7,10 +7,10 @@ stages:
         -Ddocker.password=${DOCKER_PASSWORD} -Dcheckstyle.skip=true -Pkubernetes -f
         kubernetes-hello-world-example/pom.xml
     envFrom:
-    - sourceName: docker-sercrt
+    - sourceName: dockerregistry
       sourceKey: DOCKER_USERNAME
       targetKey: DOCKER_USERNAME
-    - sourceName: docker-sercrt
+    - sourceName: dockerregistry
       sourceKey: DOCKER_PASSWORD
       targetKey: DOCKER_PASSWORD
 - name: deploy
