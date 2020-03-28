@@ -145,6 +145,25 @@
 							</generator>
 							<dockerHost>http://122.51.133.124:2375</dockerHost>
 							<pushRegistry>registry.cn-hangzhou.aliyuncs.com</pushRegistry>
+							<resources>
+								<labels>
+									<all>
+										<group>quickstarts</group>
+									</all>
+								</labels>
+								<services>
+									<service>
+										<name>camel-service</name>
+										<headless>true</headless>
+									</service>
+								</services>
+
+<!--								<serviceAccounts>-->
+<!--									<serviceAccount name="uild-robot">-->
+<!--										<name>build-robot</name>-->
+<!--									</serviceAccount>-->
+<!--								</serviceAccounts>-->
+							</resources>
 							<enricher>
 								<excludes>
 									<exclude>f8-expose</exclude>
