@@ -2,7 +2,7 @@ stages:
 - name: compile
   steps:
   - runScriptConfig:
-      image: maven
+      image: registry.cn-hangzhou.aliyuncs.com/ychuang/maven:3.6.3
       shellScript: mvn clean package fabric8:build fabric8:push  -Ddocker.username=${DOCKER_USERNAME}
         -Ddocker.password=${DOCKER_PASSWORD} -Dcheckstyle.skip=true -Pkubernetes -f
         kubernetes-hello-world-example/pom.xml
